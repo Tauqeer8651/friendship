@@ -1,52 +1,32 @@
-html {
-    background: repeating-linear-gradient(rgb(201, 124, 137), red, pink);
+html{
+  
+    background: repeating-linear-gradient(rgb(201, 124, 137),red,pink);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
+.img-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   
+
+}
+div img{
+    width: 400px;
+    height: 300px;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
+div img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
 }
 
-.img-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .img-container {
-        flex-direction: column;
-        row-gap: 20px; /* Adjust as needed */
-        column-gap: 20px; /* Adjust as needed */
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-        height: auto;
-    }
-
-    .img-container {
-        row-gap: 15px; /* Adjust as needed */
-        column-gap: 15px; /* Adjust as needed */
-    }
-}
