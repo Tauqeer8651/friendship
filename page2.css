@@ -1,0 +1,25 @@
+html{
+  
+    background: repeating-linear-gradient(rgb(201, 124, 137),red,pink);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+body{
+    row-gap: 500px;
+    column-gap: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+.img-container{
+   display: flex;
+   flex-wrap: wrap;
+   flex-flow: wrap;
+
+}
+
